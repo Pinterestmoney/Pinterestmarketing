@@ -2,577 +2,373 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>If I Started Today: My Pinterest System To Build $1,000 In 30 Days | Pin Income Blueprint</title>
-<meta name="description" content="Not a course — three years of personal Pinterest experience, stripped of failures, so you can execute the system and fix the outbound-click problem for good.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Start Making a Side Income With Pinterest</title>
+<meta name="description" content="A complete roadmap to make your first $1,000 in 30 days with Pinterest, then grow toward $10K a month. Instant download, 30-day guarantee, one-time $24.">
+<meta name="theme-color" content="#FAF6EF">
+<meta property="og:title" content="Start Making a Side Income With Pinterest">
+<meta property="og:description" content="Your complete roadmap to the first $1,000, then $10K a month.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+
 <style>
-  :root{
-    --paper:#F6F3EC;
-    --card:#FFFFFF;
-    --ink:#14171F;
-    --ink-soft:#565D6A;
-    --gold:#B98B2E;
-    --gold-dark:#8C6A22;
-    --gold-pale:#F1E6C9;
-    --danger:#9C4A3A;
-    --danger-pale:#F3E3DE;
-    --line:#E2DCCB;
-    --shadow: 0 10px 24px -16px rgba(20,23,31,0.22);
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:'Inter',sans-serif;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
-  }
-  h1,h2,h3,.display{
-    font-family:'Poppins',sans-serif;
-    font-weight:800;
-    line-height:1.15;
-    letter-spacing:-0.01em;
-    margin:0;
-  }
-  p{margin:0;}
-  a{text-decoration:none;color:inherit;}
-  .wrap{max-width:640px; margin:0 auto; padding:0 20px;}
-  img{max-width:100%; display:block;}
+/* ============ 1. COLORS (edit here) ============ */
+:root{
+  --cream:#FAF6EF;--green:#2D5A3D;--terra:#C06B4A;--terra-dark:#A9573A;
+  --sage:#A8B5A0;--tan:#EFE7DA;--line:#E3D8C6;--gold:#C9A24B;
+  --text:#2b2b26;--soft:#58574d;
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.6;padding-bottom:88px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px;position:relative}
+section{padding:48px 0;position:relative;border-top:1px solid var(--line);overflow:hidden}
+h1,h2,h3{font-family:var(--serif);color:var(--green);line-height:1.2}
+h1{font-size:clamp(32px,8.8vw,52px);font-weight:900}
+h2{font-size:clamp(25px,6.4vw,34px);margin-bottom:18px;text-align:center;font-weight:800}
+h3{font-size:17px;margin-bottom:4px}
+p{margin-bottom:12px}
+.intro{text-align:center;color:var(--soft);margin:-6px auto 20px;max-width:520px}
+.brush{background:linear-gradient(100deg,rgba(192,107,74,.1) 0%,rgba(192,107,74,.34) 6%,rgba(192,107,74,.28) 94%,rgba(192,107,74,.1) 100%);padding:.02em .3em;border-radius:.45em .7em .4em .65em;box-decoration-break:clone;-webkit-box-decoration-break:clone;color:var(--green)}
 
-  /* ---------- Top bar ---------- */
-  .topbar{
-    position:sticky; top:0; z-index:50;
-    background:rgba(246,243,236,0.94);
-    backdrop-filter: blur(8px);
-    border-bottom:1px solid var(--line);
-  }
-  .topbar-inner{
-    max-width:640px; margin:0 auto; padding:12px 18px;
-    display:flex; align-items:center; justify-content:space-between;
-  }
-  .brand{display:flex; align-items:center; gap:8px; font-family:'Poppins'; font-weight:800; font-size:15px;}
-  .brand .dot{
-    width:26px; height:26px; border-radius:6px;
-    background:var(--ink); color:var(--gold);
-    display:flex; align-items:center; justify-content:center;
-    font-size:14px; font-weight:900;
-  }
-  .btn-topbar{
-    background:var(--ink); color:#fff;
-    font-family:'Poppins'; font-weight:700; font-size:13px;
-    padding:9px 16px; border-radius:8px;
-    white-space:nowrap;
-  }
+/* ============ 2. BUTTONS ============ */
+.btn{display:flex;align-items:center;justify-content:center;min-height:60px;padding:14px 24px;width:100%;max-width:440px;margin:22px auto 0;border-radius:14px;background:var(--terra);color:var(--cream);font-weight:700;font-size:17px;line-height:1.3;text-decoration:none;text-align:center;box-shadow:0 8px 22px rgba(192,107,74,.32);transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover,.btn:focus-visible{background:var(--terra-dark);transform:translateY(-3px);box-shadow:0 12px 28px rgba(192,107,74,.45)}
+.btn:active{transform:scale(.98)}
+.btn:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.pulse{animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 8px 22px rgba(192,107,74,.3)}50%{box-shadow:0 8px 34px rgba(192,107,74,.6)}}
+.urgency{display:table;margin:14px auto 0;padding:6px 14px;border-radius:999px;background:var(--gold);color:#2a2008;font-size:13px;font-weight:700}
+.micro{font-size:13px;color:var(--soft);text-align:center;margin-top:10px}
 
-  /* ---------- Hero ---------- */
-  .hero{ padding:36px 0 30px; }
-  .eyebrow{
-    display:inline-flex; align-items:center;
-    padding:0 0 0 12px; border-left:3px solid var(--gold);
-    font-family:'Poppins'; font-weight:700; font-size:11.5px;
-    letter-spacing:0.09em; text-transform:uppercase;
-    color:var(--ink-soft);
-  }
-  .hero h1{ margin-top:18px; font-size:32px; }
-  .hero h1 .accent{color:var(--gold-dark);}
-  .hero h1 .underline{ position:relative; display:inline-block; }
-  .hero h1 .underline .bar{
-    position:absolute; left:2px; right:2px; bottom:1px; height:9px;
-    background:var(--gold-pale); z-index:-1;
-  }
-  .hero-sub{
-    margin-top:16px; font-size:16.5px; line-height:1.55; color:var(--ink-soft);
-    max-width:520px;
-  }
-  .hero-sub b{color:var(--ink); font-weight:700;}
+/* ============ 3. HERO ============ */
+.hero{padding:28px 0 46px;text-align:center;border-top:0;background:linear-gradient(180deg,#fff7ea,var(--cream))}
+.pill{display:inline-block;background:var(--sage);color:var(--green);font-weight:700;font-size:13.5px;line-height:1.4;padding:8px 16px;border-radius:999px;margin-bottom:20px}
+.subline{margin:20px auto 0;font-family:var(--serif);font-weight:700;font-size:clamp(19px,5vw,25px);line-height:1.55;color:var(--green)}
+.tease{margin:18px auto 0;color:var(--terra-dark);font-weight:700;font-size:16.5px}
+.leaf{position:absolute;width:96px;height:96px;opacity:.6;pointer-events:none}
+.tl{top:-4px;left:-16px}.br{bottom:-8px;right:-16px;transform:rotate(180deg)}.tr{top:-4px;right:-16px;transform:scaleX(-1)}
 
-  .trust-row{ margin-top:20px; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
-  .stars{color:var(--gold); font-size:15px; letter-spacing:1px;}
-  .trust-text{font-size:13px; color:var(--ink-soft); font-weight:500;}
-  .trust-text b{color:var(--ink);}
+/* Number band */
+.band{background:var(--green);padding:26px 0}
+.nums{display:grid;grid-template-columns:1fr 1fr;gap:16px 10px;text-align:center}
+.nums b{display:block;font-family:var(--serif);font-size:clamp(28px,7.5vw,36px);color:#fff;line-height:1.1}
+.nums small{font-size:13px;color:#d9e3d6}
 
-  .hero-ctas{margin-top:22px; display:flex; flex-direction:column; gap:10px;}
-  .btn-primary{
-    display:flex; align-items:center; justify-content:center; gap:8px;
-    background:var(--ink); color:#fff;
-    font-family:'Poppins'; font-weight:700; font-size:16px;
-    padding:17px 20px; border-radius:10px;
-  }
-  .btn-primary:active{opacity:0.9;}
-  .btn-primary .price-old{
-    text-decoration:line-through; opacity:0.65; font-weight:600; font-size:14px;
-  }
-  .hero-note{ text-align:center; font-size:12.5px; color:var(--ink-soft); font-weight:500; }
-  .hero-note b{color:var(--gold-dark);}
+/* ============ 4. ROADMAP ============ */
+.road{list-style:none;position:relative;display:grid;gap:14px;padding-left:0}
+.road li{display:flex;gap:14px;align-items:flex-start;background:var(--tan);border:1px solid var(--line);border-radius:16px;padding:16px}
+.road .n{flex:none;width:38px;height:38px;border-radius:50%;background:var(--terra);color:var(--cream);display:grid;place-items:center;font-weight:800;font-family:var(--serif)}
+.road p{margin:0;font-size:15px;color:var(--soft)}
+.road li.goal{background:var(--green)}
+.road li.goal h3,.road li.goal p{color:var(--cream)}
+.road li.goal .n{background:var(--gold);color:#2a2008}
+.road li.lock{border-style:dashed;background:#fff}
+.road li.lock .n{background:var(--sage);color:var(--green)}
 
-  .promise-block{
-    margin-top:22px; padding:18px 20px; background:var(--card);
-    border:1px solid var(--line); border-radius:12px;
-  }
-  .promise-block p{ font-size:14.5px; line-height:1.6; color:var(--ink-soft); }
-  .promise-block b{ color:var(--ink); }
+/* Pain */
+.pains{list-style:none;display:grid;gap:10px}
+.pains li{display:flex;gap:12px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px 16px}
+.pains li::before{content:"×";flex:none;width:24px;height:24px;border-radius:50%;background:#fbe3df;color:#c0392b;display:grid;place-items:center;font-weight:800;line-height:1}
+.statement{margin:22px 0 0;font-family:var(--serif);font-weight:800;font-size:clamp(19px,4.9vw,23px);line-height:1.4;color:var(--terra-dark);text-align:center}
 
-  .core-problem{
-    margin-top:14px; padding:18px 20px; background:var(--ink);
-    border-radius:12px; color:#fff;
-  }
-  .core-problem-label{
-    font-family:'Poppins'; font-weight:700; font-size:11.5px;
-    letter-spacing:0.06em; text-transform:uppercase; color:var(--gold);
-    margin-bottom:8px;
-  }
-  .core-problem p{ font-size:14.5px; line-height:1.6; color:#E7E3D8; }
+/* Chips */
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.chips span{background:var(--tan);border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:14px;font-weight:600;color:var(--green)}
+.chips.mods span{background:#fff;font-weight:500}
+.chips.mods b{color:var(--terra)}
 
-  .hero-badges{ margin-top:22px; display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
-  .hero-badge{
-    background:var(--card); border:1px solid var(--line); border-top:3px solid var(--gold);
-    border-radius:8px; padding:11px 6px; text-align:center;
-  }
-  .hero-badge .num{font-family:'Poppins'; font-weight:800; font-size:16px; color:var(--ink);}
-  .hero-badge .lbl{font-size:10.5px; color:var(--ink-soft); font-weight:600; margin-top:2px;}
+/* Unlock + bonus */
+.unlock{background:var(--green);color:var(--cream);border-radius:18px;padding:26px 22px;margin-top:26px}
+.unlock h3{color:#fff;font-size:21px;text-align:center;margin-bottom:14px}
+.unlock ul{list-style:none;display:grid;gap:12px;margin-bottom:14px}
+.unlock li{display:flex;gap:10px}
+.unlock .fade{margin:0;color:#d9e3d6;font-style:italic;text-align:center}
+.bonus{margin-top:22px;background:var(--terra);color:var(--cream);border-radius:16px;padding:20px}
+.bonus h3{color:var(--cream);margin-bottom:10px}
+.bonus ul{list-style:none;display:grid;gap:10px}
+.free{display:inline-block;background:var(--gold);color:#2a2008;font-size:11px;font-weight:800;padding:2px 8px;border-radius:6px;margin-right:6px;vertical-align:middle}
+.stack{margin-top:22px;text-align:center;font-family:var(--serif);font-weight:800;font-size:clamp(20px,5.2vw,25px);color:var(--green)}
+.tag{display:inline-block;background:var(--gold);color:#2a2008;padding:1px 12px;border-radius:10px}
+.position{margin-top:22px;padding:18px;border-radius:14px;border-left:5px solid var(--terra);background:#fff;font-family:var(--serif);font-weight:700;font-size:clamp(17px,4.5vw,20px);line-height:1.5;color:var(--green)}
 
-  /* ---------- Urgency strip ---------- */
-  .urgency{ background:var(--ink); color:#fff; padding:12px 0; text-align:center; }
-  .urgency-text{font-size:12.5px; font-weight:600; font-family:'Poppins'; letter-spacing:0.02em;}
-  .urgency-text span{color:var(--gold);}
+.two{display:grid;gap:12px}
+.card{background:var(--tan);border:1px solid var(--line);border-radius:16px;padding:20px}
+.card.sage{background:var(--sage);border-color:var(--sage)}
+.two ul{list-style:none;display:grid;gap:8px;margin-top:8px}
+.two li{display:flex;gap:10px}
+.yes li::before{content:"✅"}.no li::before{content:"❌"}
 
-  /* ---------- Section shell ---------- */
-  section{padding:46px 0;}
-  .section-head{margin-bottom:24px;}
-  .kicker{
-    display:inline-flex; align-items:center; padding-left:11px; border-left:3px solid var(--gold);
-    font-family:'Poppins'; font-weight:700; font-size:11.5px; letter-spacing:0.07em; text-transform:uppercase;
-    color:var(--ink-soft);
-  }
-  .section-title{font-size:24px; margin-top:10px;}
-  .section-sub{margin-top:10px; color:var(--ink-soft); font-size:15px; line-height:1.55;}
+.guar{text-align:center;background:#fff;border:2px solid var(--gold);border-radius:18px;padding:26px 20px}
+.shield{font-size:48px}
 
-  /* ---------- Problem section ---------- */
-  .problem-card{
-    background:var(--card); border:1px solid var(--line); border-radius:12px;
-    padding:22px; margin-bottom:14px;
-  }
-  .problem-row{
-    display:flex; align-items:flex-start; gap:12px; padding:11px 0;
-    border-bottom:1px solid var(--line); font-size:14.5px; color:var(--ink-soft);
-  }
-  .problem-row:last-child{border-bottom:none;}
-  .problem-row .x{
-    width:20px; height:20px; border-radius:5px; background:var(--danger-pale); color:var(--danger);
-    flex:none; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:11px;
-  }
-  .callout{ margin-top:18px; background:var(--ink); color:#fff; border-radius:12px; padding:24px; }
-  .callout p:first-child{font-size:13px; color:var(--gold); font-weight:700; letter-spacing:0.04em; text-transform:uppercase;}
-  .callout h3{font-size:20px; margin-top:10px; color:#fff; line-height:1.45; font-weight:700;}
-  .callout h3 span{color:var(--gold);}
+details{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:10px}
+summary{cursor:pointer;list-style:none;padding:15px 48px 15px 18px;font-weight:600;color:var(--green);position:relative;min-height:52px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:18px;top:10px;font-size:26px;color:var(--terra);transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 18px 15px;margin:0;color:var(--soft)}
 
-  /* ---------- Authority stat ---------- */
-  .stat-block{
-    background:linear-gradient(160deg,#1B1F2A 0%, #0D0F15 100%);
-    border-radius:14px; padding:28px 22px; color:#fff; text-align:center;
-  }
-  .stat-block .figure{font-family:'Poppins'; font-weight:900; font-size:42px; color:var(--gold);}
-  .stat-block .figure span{font-size:21px; vertical-align:top;}
-  .stat-block .caption{margin-top:6px; font-size:14px; font-weight:600; opacity:0.95;}
-  .stat-block .fine{margin-top:14px; font-size:12.5px; opacity:0.75; line-height:1.5;}
-  .stat-block .mini{
-    margin-top:14px; padding-top:14px; border-top:1px solid rgba(255,255,255,0.15);
-    font-size:12.5px; opacity:0.8; line-height:1.5;
-  }
+.final{background:var(--tan);text-align:center}
+.final .l{font-size:17px;color:var(--soft)}
 
-  /* ---------- Pin grid ---------- */
-  .pin-grid{ columns:2; column-gap:14px; }
-  .pin-card{
-    break-inside:avoid; margin-bottom:14px;
-    background:var(--card); border:1px solid var(--line); border-left:3px solid var(--gold);
-    border-radius:0 10px 10px 0; overflow:hidden;
-  }
-  .pin-top{ padding:15px 14px 10px; display:flex; align-items:center; gap:8px; }
-  .pin-num{
-    font-family:'Poppins'; font-weight:900; font-size:12px;
-    background:var(--ink); color:var(--gold); width:22px; height:22px; border-radius:5px;
-    display:flex; align-items:center; justify-content:center; flex:none;
-  }
-  .pin-eyebrow{font-size:10.5px; font-weight:700; letter-spacing:0.03em; text-transform:uppercase; color:var(--ink-soft);}
-  .pin-body{padding:0 14px 15px;}
-  .pin-body h4{font-family:'Poppins'; font-weight:700; font-size:14.5px; line-height:1.35; margin:0 0 6px;}
-  .pin-body p{font-size:12.5px; color:var(--ink-soft); line-height:1.5;}
-  .pin-body .pin-tag{
-    display:inline-block; margin-top:10px; color:var(--gold-dark);
-    font-size:10.5px; font-weight:700; letter-spacing:0.02em; text-transform:uppercase;
-  }
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;align-items:center;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(250,246,239,.97);border-top:2px solid var(--terra);backdrop-filter:blur(8px);transform:translateY(110%);transition:transform .35s}
+.sticky.show{transform:none}
+.sticky .price{font-family:var(--serif);font-size:26px;font-weight:900;color:var(--green);line-height:1}
+.sticky .price small{display:block;font-family:var(--sans);font-size:11px;font-weight:500;color:var(--soft);margin-top:3px}
+.sticky .btn{margin:0;flex:1;max-width:none;min-height:56px;font-size:16px}
+footer{padding:26px 0 14px;text-align:center;font-size:12.5px;color:var(--soft)}
 
-  /* ---------- Who it's for ---------- */
-  .for-grid{display:flex; flex-direction:column; gap:14px;}
-  .for-card{ background:var(--card); border-radius:10px; padding:20px; border:1px solid var(--line); }
-  .for-card.yes{border-left:4px solid var(--gold);}
-  .for-card.no{border-left:4px solid var(--danger);}
-  .for-card .ftitle{font-family:'Poppins'; font-weight:800; font-size:14px; margin-bottom:10px; letter-spacing:0.01em;}
-  .for-card ul{margin:0; padding:0; list-style:none;}
-  .for-card li{ font-size:13.5px; color:var(--ink-soft); padding:6px 0; padding-left:20px; position:relative; line-height:1.45; }
-  .for-card.yes li:before{content:"✓"; position:absolute; left:0; color:var(--gold-dark); font-weight:800;}
-  .for-card.no li:before{content:"✕"; position:absolute; left:0; color:var(--danger); font-weight:800;}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
 
-  /* ---------- Testimonial / story ---------- */
-  .quote-card{ background:var(--ink); color:#fff; border-radius:14px; padding:26px 22px; }
-  .quote-card p{font-size:15px; line-height:1.65;}
-  .quote-card .quote-fig{color:var(--gold); font-family:'Poppins'; font-weight:800;}
-  .quote-card .disclosure{
-    display:block; margin-top:16px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.15);
-    font-size:12.5px; color:#B9B3A2; line-height:1.55;
-  }
-  .quote-foot{display:flex; align-items:center; gap:10px; margin-top:18px;}
-  .avatar{
-    width:36px; height:36px; border-radius:8px;
-    background:var(--gold); display:flex; align-items:center; justify-content:center;
-    font-family:'Poppins'; font-weight:800; color:var(--ink); font-size:14px; flex:none;
-  }
-  .quote-name{font-family:'Poppins'; font-weight:700; font-size:13.5px;}
-  .quote-role{font-size:11.5px; color:#9A9384;}
-
-  /* ---------- Pricing ---------- */
-  .price-card{
-    background:var(--card); border:1px solid var(--line); border-top:4px solid var(--gold);
-    border-radius:14px; padding:26px 22px; position:relative;
-  }
-  .value-stack{
-    text-align:center; font-size:13px; color:var(--ink-soft); margin-bottom:14px; line-height:1.5;
-  }
-  .value-stack b{color:var(--ink);}
-  .price-row{ display:flex; align-items:baseline; justify-content:center; gap:10px; }
-  .price-now{font-family:'Poppins'; font-weight:900; font-size:42px; color:var(--ink);}
-  .price-old2{font-family:'Poppins'; font-weight:700; font-size:20px; color:var(--ink-soft); text-decoration:line-through;}
-  .price-per{text-align:center; font-size:12.5px; color:var(--ink-soft); margin-top:2px; font-weight:600;}
-  .price-list{margin:22px 0; padding:0; list-style:none;}
-  .price-list li{
-    display:flex; align-items:flex-start; gap:10px; font-size:14px; color:var(--ink);
-    padding:8px 0; border-bottom:1px dashed var(--line);
-  }
-  .price-list li:last-child{border-bottom:none;}
-  .price-list li .ck{
-    width:18px; height:18px; border-radius:4px; background:var(--gold-pale); color:var(--gold-dark); flex:none;
-    display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:800; margin-top:1px;
-  }
-  .price-proof{ text-align:center; font-size:12.5px; color:var(--ink-soft); margin-top:16px; font-weight:600; }
-  .price-proof b{color:var(--gold-dark);}
-  .price-honest{ text-align:center; font-size:11.5px; color:var(--ink-soft); margin-top:10px; line-height:1.5; }
-
-  /* ---------- FAQ ---------- */
-  .faq-item{ border-bottom:1px solid var(--line); padding:16px 0; }
-  .faq-q{
-    font-family:'Poppins'; font-weight:700; font-size:14.5px;
-    display:flex; justify-content:space-between; align-items:center; cursor:pointer;
-  }
-  .faq-q .plus{color:var(--gold-dark); font-size:19px; font-weight:800; transition:transform .2s;}
-  .faq-a{ max-height:0; overflow:hidden; transition:max-height .25s ease; font-size:13.5px; color:var(--ink-soft); line-height:1.55; }
-  .faq-item.open .faq-a{max-height:220px; padding-top:10px;}
-  .faq-item.open .plus{transform:rotate(45deg);}
-
-  /* ---------- Final CTA ---------- */
-  .final{ text-align:center; }
-  .final h2{font-size:25px;}
-  .final p.sub{margin-top:12px; color:var(--ink-soft); font-size:15px; max-width:480px; margin-left:auto; margin-right:auto;}
-  .final .btn-primary{margin-top:24px; width:100%;}
-  .guarantee{ margin-top:16px; font-size:12.5px; color:var(--ink-soft); font-weight:600; }
-
-  footer{ padding:30px 0 100px; text-align:center; font-size:12px; color:var(--ink-soft); }
-  footer .brand-foot{font-family:'Poppins'; font-weight:800; color:var(--ink); font-size:14px; margin-bottom:6px;}
-  footer .foot-promise{
-    margin-top:14px; font-size:12px; color:var(--ink-soft); line-height:1.6;
-    max-width:480px; margin-left:auto; margin-right:auto;
-  }
-
-  /* ---------- Sticky mobile bar ---------- */
-  .sticky-cta{
-    position:fixed; left:0; right:0; bottom:0; z-index:60;
-    background:#fff; border-top:1px solid var(--line);
-    padding:10px 16px calc(10px + env(safe-area-inset-bottom));
-    box-shadow:0 -8px 20px -14px rgba(0,0,0,0.2);
-    display:flex; align-items:center; gap:12px;
-  }
-  .sticky-cta .info{flex:1; min-width:0;}
-  .sticky-cta .info .l1{font-family:'Poppins'; font-weight:800; font-size:13px;}
-  .sticky-cta .info .l2{font-size:11px; color:var(--ink-soft);}
-  .sticky-cta .btn-primary{padding:12px 18px; font-size:13.5px; border-radius:8px; white-space:nowrap;}
-
-  @media (max-width:380px){
-    .hero h1{font-size:26px;}
-    .section-title{font-size:20px;}
-    .stat-block .figure{font-size:34px;}
-    .price-now{font-size:34px;}
-  }
-  @media (min-width:640px){
-    .hero h1{font-size:40px;}
-    .section-title{font-size:28px;}
-  }
+@media(min-width:700px){
+  .two{grid-template-columns:1fr 1fr}
+  .nums{grid-template-columns:repeat(4,1fr)}
+  .sticky{display:none}
+  body{padding-bottom:0}
+  .leaf{width:130px;height:130px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .pulse{animation:none}
+  .btn,.sticky{transition:none}
+}
 </style>
 </head>
+
 <body>
 
-<div class="topbar">
-  <div class="topbar-inner">
-    <div class="brand"><span class="dot">P</span> Pin Income Blueprint</div>
-    <a class="btn-topbar" href="https://womensguide.gumroad.com/l/pinterestguide" target="_blank" rel="noopener">Get The Real System</a>
-  </div>
-</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="leaf" viewBox="0 0 100 100">
+    <g fill="none" stroke="#A8B5A0" stroke-width="2.5" stroke-linecap="round">
+      <path d="M8 92 C 20 55, 40 30, 80 10"/>
+      <path d="M30 62 C 22 50, 24 38, 32 30 C 40 40, 40 52, 30 62Z" fill="#A8B5A0" fill-opacity=".35"/>
+      <path d="M48 44 C 42 32, 46 22, 56 16 C 62 28, 58 38, 48 44Z" fill="#A8B5A0" fill-opacity=".35"/>
+      <path d="M20 80 C 30 76, 40 78, 46 86 C 36 90, 26 88, 20 80Z" fill="#A8B5A0" fill-opacity=".35"/>
+    </g>
+  </symbol>
+</svg>
 
+<!-- ================= HERO ================= -->
 <header class="hero">
+  <svg class="leaf tl" aria-hidden="true"><use href="#leaf"/></svg>
   <div class="wrap">
-    <div class="eyebrow">Pinterest Income System · 2026</div>
-    <h1>If I Started Today: My Exact <span class="underline">Pinterest<span class="bar"></span></span> System To Build <span class="accent">$1,000</span> In The Next 30 Days</h1>
-    <p class="hero-sub">I use four simple tools — Canva for pin design, Claude for ideas and content, Gumroad to sell, and Pinterest to send the traffic. This isn't a course. It's three years of personal experience with every failure stripped out, so you only execute what actually works.</p>
+    <span class="pill">🌱 Welcome to the Pinterest 1% Creator Club</span>
+    <h1>Start Making a Side Income With Pinterest</h1>
+    <p class="subline">A complete roadmap to your first <span class="brush">$1,000</span> in the next 30 days. Then <span class="brush">$10K a month.</span></p>
+    <p class="tease">See exactly what to do on Day 1, Day 7 and Day 30.</p>
 
-    <div class="trust-row">
-      <div class="stars">★★★★★</div>
-      <div class="trust-text"><b>3 years</b> selling digital products on Pinterest — this is the exact system I still use today</div>
-    </div>
-
-    <div class="hero-ctas">
-      <a class="btn-primary" href="https://womensguide.gumroad.com/l/pinterestguide" target="_blank" rel="noopener">Get The Real System <span class="price-old">$49</span> $24</a>
-      <div class="hero-note">Instant download &nbsp;·&nbsp; <b>$0 to start</b> &nbsp;·&nbsp; No followers needed</div>
-    </div>
-
-    <div class="promise-block">
-      <p>This guide is built to help you build income from scratch — even if you currently know nothing about Pinterest. What you actually earn depends on your effort: some people land around <b>$1K a month</b>, others push past <b>$10K</b>. The system underneath stays the same either way.</p>
-    </div>
-
-    <div class="core-problem">
-      <div class="core-problem-label">The #1 problem this fixes</div>
-      <p>You're posting pins every day. You're getting views and saves. But the outbound clicks never show up — and without clicks, there's no traffic, no list, no sales. That exact gap is what this guide exists to close.</p>
-    </div>
-
-    <div class="hero-badges">
-      <div class="hero-badge"><div class="num">$0</div><div class="lbl">Startup cost</div></div>
-      <div class="hero-badge"><div class="num">2 hrs</div><div class="lbl">Per day</div></div>
-      <div class="hero-badge"><div class="num">0</div><div class="lbl">Followers needed</div></div>
-    </div>
+    <!-- BUTTON 1 -->
+    <a class="btn pulse" href="https://womensguide.gumroad.com/l/pinterestguide" data-buy>Get Instant Access for $24</a>
+    <span class="urgency">Launch price $24, rising to $47 soon</span>
+    <p class="micro">Instant download · 30-day guarantee · No ads needed</p>
   </div>
 </header>
 
-<div class="urgency">
-  <div class="wrap">
-    <div class="urgency-text"><span>Early-access price</span> while I keep adding the 2027 niche updates</div>
+<!-- ================= NUMBER BAND ================= -->
+<div class="band">
+  <div class="wrap nums">
+    <div><b data-count="15" data-suffix="+">15+</b><small>Future-proof niches</small></div>
+    <div><b data-count="30" data-suffix="+">30+</b><small>Digital products</small></div>
+    <div><b data-count="1850" data-suffix="+">1,850+</b><small>Users on the system</small></div>
+    <div><b data-count="184000" data-prefix="$" data-suffix="+">$184,000+</b><small>Real revenue behind it</small></div>
   </div>
 </div>
 
-<section id="problem">
+<main>
+
+<!-- ================= ROADMAP ================= -->
+<section class="reveal">
+  <svg class="leaf tr" aria-hidden="true"><use href="#leaf"/></svg>
   <div class="wrap">
-    <div class="section-head">
-      <div class="kicker">Sound familiar?</div>
-      <h2 class="section-title">Getting views and saves, but the clicks never show up?</h2>
-      <p class="section-sub">You started Pinterest because people said it makes money. You've stayed consistent. You're getting impressions, saves, even the odd traffic spike. But it never turns into buyers.</p>
-    </div>
-    <div class="problem-card">
-      <div class="problem-row"><span class="x">✕</span> Pretty pins that get views and saves but zero outbound clicks</div>
-      <div class="problem-row"><span class="x">✕</span> Traffic that stays inside Pinterest and never reaches your link</div>
-      <div class="problem-row"><span class="x">✕</span> Ad money spent on other platforms with little to show for it</div>
-      <div class="problem-row"><span class="x">✕</span> No idea which niche or product Pinterest actually wants to push right now</div>
-    </div>
-    <div class="callout">
-      <p>The real issue</p>
-      <h3>It's almost never a content problem — it's a <span>click-structure</span> problem, and most creators never go back to fix it.</h3>
-    </div>
+    <h2>Your Roadmap to <span class="brush">$1,000</span></h2>
+    <p class="intro">No experience. No following. No excuses.</p>
+    <ol class="road">
+      <li><span class="n">1</span><div><h3>Set up an account Pinterest trusts</h3><p>Most people skip this. It's why they get zero reach.</p></div></li>
+      <li><span class="n">2</span><div><h3>Pick a niche that actually pays</h3><p>15+ future-proof niches, already tested.</p></div></li>
+      <li><span class="n">3</span><div><h3>Make scroll-stopping pins in 10 minutes</h3><p>Free AI tools. No design skills.</p></div></li>
+      <li><span class="n">4</span><div><h3>Turn views into clicks, and clicks into sales</h3><p>The click structure almost nobody teaches.</p></div></li>
+      <li class="goal"><span class="n">$</span><div><h3>Hit your first $1,000</h3><p>Follow the 30-day daily plan.</p></div></li>
+      <li class="lock"><span class="n">🔒</span><div><h3>What comes next?</h3><p>The path from $1,000 to $10K a month is inside.</p></div></li>
+    </ol>
   </div>
 </section>
 
-<section id="proof" style="padding-top:0;">
+<!-- ================= PROBLEM ================= -->
+<section class="reveal">
   <div class="wrap">
-    <div class="stat-block">
-      <div class="figure">$189K<span>+</span></div>
-      <div class="caption">Earned selling digital products through Pinterest traffic, no ad spend</div>
-      <div class="fine">I stopped chasing views and rebuilt my whole approach around outbound clicks. No ads, no paid traffic — just an intentional pin structure. That shift is what built this guide.</div>
-      <div class="mini">One single pin alone has pulled over 700K views and helped bring in more than $10K on its own.</div>
-    </div>
+    <h2>Getting Views... But <span class="brush">Zero Clicks?</span></h2>
+    <ul class="pains">
+      <li>Thousands of views, but nobody clicks your pins</li>
+      <li>Viral pins, but zero sales</li>
+      <li>Everyone teaches views. Nobody teaches clicks.</li>
+    </ul>
+    <p class="statement">It's not a content problem. It's a click structure problem, and 95% of creators never fix it.</p>
   </div>
 </section>
 
-<section id="whats-inside">
+<!-- ================= WHO IT'S FOR ================= -->
+<section class="reveal">
+  <svg class="leaf br" aria-hidden="true"><use href="#leaf"/></svg>
   <div class="wrap">
-    <div class="section-head">
-      <div class="kicker">What's inside</div>
-      <h2 class="section-title">A full roadmap, not random tips</h2>
-      <p class="section-sub">Five parts that take you from a brand new account to a repeatable stream of buyers, in order.</p>
+    <h2>Built for People Starting at Zero</h2>
+    <div class="chips">
+      <span>👩‍👧 Busy moms</span><span>🎓 Students</span><span>⚡ Side hustlers</span><span>🏪 Business owners</span><span>🆕 Total beginners</span><span>💻 Digital sellers</span>
     </div>
-    <div class="pin-grid">
-      <div class="pin-card">
-        <div class="pin-top"><span class="pin-num">1</span><span class="pin-eyebrow">Foundation</span></div>
-        <div class="pin-body">
-          <h4>Start from scratch, the right way</h4>
-          <p>Set up your account, profile, and boards correctly from day one — even with $0 and zero followers.</p>
-          <span class="pin-tag">Start here</span>
-        </div>
-      </div>
-      <div class="pin-card">
-        <div class="pin-top"><span class="pin-num">2</span><span class="pin-eyebrow">Traffic fix</span></div>
-        <div class="pin-body">
-          <h4>Turn views into real clicks</h4>
-          <p>The exact pin structure that moves stuck accounts from quiet impressions to people actually clicking through.</p>
-          <span class="pin-tag">Core system</span>
-        </div>
-      </div>
-      <div class="pin-card">
-        <div class="pin-top"><span class="pin-num">3</span><span class="pin-eyebrow">15 niches</span></div>
-        <div class="pin-body">
-          <h4>Pick a niche with room to grow</h4>
-          <p>15 Pinterest niches with real buying intent and ready-made board ideas — positioned to give you a first-mover advantage before trends shift in 2027.</p>
-          <span class="pin-tag">Beginner friendly</span>
-        </div>
-      </div>
-      <div class="pin-card">
-        <div class="pin-top"><span class="pin-num">4</span><span class="pin-eyebrow">20+ products</span></div>
-        <div class="pin-body">
-          <h4>Digital products you can build fast</h4>
-          <p>Over 20 product ideas matched to searches already happening on Pinterest, made with tools like Canva and Claude.</p>
-          <span class="pin-tag">Step by step</span>
-        </div>
-      </div>
-      <div class="pin-card">
-        <div class="pin-top"><span class="pin-num">5</span><span class="pin-eyebrow">10 income streams</span></div>
-        <div class="pin-body">
-          <h4>Turn traffic into income, 10 ways</h4>
-          <p>Your own products, Amazon finds, or a blog — send Pinterest traffic wherever fits, and stack as many streams as you want.</p>
-          <span class="pin-tag">Your choice</span>
-        </div>
-      </div>
-    </div>
+    <p class="intro" style="margin-top:20px">I spent 4 years testing every Pinterest strategy so you don't have to. When I redesigned my pins for clicks, everything changed. This is that exact system.</p>
   </div>
 </section>
 
-<section id="forwho">
+<!-- ================= WHAT'S INSIDE ================= -->
+<section class="reveal">
   <div class="wrap">
-    <div class="section-head">
-      <div class="kicker">Is this you?</div>
-      <h2 class="section-title">Built for beginners who are ready to execute</h2>
+    <h2>10 Modules. 1 Outcome.</h2>
+    <div class="chips mods">
+      <span><b>01</b> Account setup</span><span><b>02</b> Niches that pay</span><span><b>03</b> AI pin creation</span><span><b>04</b> Viral pin formula</span><span><b>05</b> Safe link strategy</span><span><b>06</b> Posting schedule</span><span><b>07</b> Outbound clicks system</span><span><b>08</b> 10 ways to monetize</span><span><b>09</b> Analytics in 5 minutes</span><span><b>10</b> Hook templates</span>
     </div>
-    <div class="for-grid">
-      <div class="for-card yes">
-        <div class="ftitle">This is for you if</div>
-        <ul>
-          <li>You get views and saves but no clicks, and want that fixed</li>
-          <li>You're spending on ads elsewhere without solid results</li>
-          <li>You're a student, a stay-at-home parent, or just starting out with $0 to invest</li>
-          <li>You can commit a couple of focused hours a day and follow steps in order</li>
-          <li>You want a real income stream — your own products, Amazon, or a blog</li>
-        </ul>
-      </div>
-      <div class="for-card no">
-        <div class="ftitle">This is not for you if</div>
-        <ul>
-          <li>You want results with zero time or effort</li>
-          <li>You're only chasing a viral trick, not a repeatable system</li>
-          <li>You're not willing to post consistently and follow the steps</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section id="story">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="kicker">Why I built this</div>
-      <h2 class="section-title">3 years, one platform, real numbers</h2>
-    </div>
-    <div class="quote-card">
-      <p>I'm not selling a course — I'm charging for three years of personal experience, so you can execute it starting today instead of spending three years finding it yourself the way I did. I started with $0 and no following, and I've since earned more than <span class="quote-fig">$189,000</span> selling digital products through Pinterest traffic alone, no ad spend. One single pin pulled over 700K views and brought in more than $10,000 by itself. I stripped out every failure and false start along the way — what's left in this guide is only what actually worked. Most Pinterest creators hit the same wall: pins get views and saves, but the clicks never show up. This guide is the exact fix for that, plus the niches, the products, and the tools I actually use.</p>
-      <span class="disclosure">I won't tell you this guarantees anything — your results depend on your own effort and consistency, the same way mine did. What I can tell you is this is the real process, not a repackaged course.</span>
-      <div class="quote-foot">
-        <div class="avatar">P</div>
-        <div>
-          <div class="quote-name">P., Guide Creator</div>
-          <div class="quote-role">Pinterest seller & digital product creator, 3 years in</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="pricing">
-  <div class="wrap">
-    <div class="section-head" style="text-align:center;">
-      <div class="kicker">Today's price</div>
-      <h2 class="section-title">A $1,000 system, priced like a coffee</h2>
-    </div>
-    <div class="price-card">
-      <div class="value-stack">If I walked you through this <b>1-on-1</b>, it would run <b>$1,000 or more</b>. Today it's <b>$24</b> — same system, no calls required.</div>
-      <div class="price-row">
-        <span class="price-old2">$49</span>
-        <span class="price-now">$24</span>
-      </div>
-      <div class="price-per">One time payment · instant access · yours for life</div>
-      <ul class="price-list">
-        <li><span class="ck">✓</span> The full $0-to-income Pinterest roadmap</li>
-        <li><span class="ck">✓</span> The exact outbound click structure system</li>
-        <li><span class="ck">✓</span> 15 Pinterest niches with real buying intent + board ideas</li>
-        <li><span class="ck">✓</span> 20+ digital product ideas you can build with Canva and Claude</li>
-        <li><span class="ck">✓</span> 10 ways to turn Pinterest traffic into income</li>
-        <li><span class="ck">✓</span> How to revive a dead or stuck account</li>
+    <div class="bonus">
+      <h3>🎁 Free bonuses</h3>
+      <ul>
+        <li><span class="free">FREE</span><b>Coloring Book Empire</b></li>
+        <li><span class="free">FREE</span><b>Medium plus Pinterest earning method</b></li>
+        <li><span class="free">FREE</span><b>Amazon affiliate method</b></li>
       </ul>
-      <a class="btn-primary" href="https://womensguide.gumroad.com/l/pinterestguide" target="_blank" rel="noopener">Get The Real System, $24</a>
-      <div class="price-proof">Instant download · yours for life · <b>simple refund</b> if it's not the right fit</div>
-      <div class="price-honest">Your results depend on your effort and consistency — this guide teaches the process, not a guaranteed number.</div>
+    </div>
+
+    <p class="stack">Total value over $97. Today only <span class="tag">$24</span>.</p>
+
+    <!-- Positioning line, keep word for word -->
+    <p class="position">The best way UK and United States creators make money using this system on Pinterest.</p>
+
+    <div class="unlock">
+      <h3>What happens after you click</h3>
+      <ul>
+        <li><span>🔓</span><span>The pin template behind 52.8K clicks opens.</span></li>
+        <li><span>🔓</span><span>Your 30 to 40 day plan to $1,000 appears.</span></li>
+        <li><span>🔓</span><span>Low-competition buyer niches get revealed.</span></li>
+      </ul>
+      <p class="fade">Most people close this page and keep refreshing their analytics. You don't have to.</p>
+      <!-- BUTTON 2 -->
+      <a class="btn" href="https://womensguide.gumroad.com/l/pinterestguide" data-buy>Unlock the Full System for $24</a>
+      <span class="urgency">Launch price $24, rising to $47 soon</span>
     </div>
   </div>
 </section>
 
-<section id="faq">
+<!-- ================= FOR / NOT FOR ================= -->
+<section class="reveal">
+  <svg class="leaf tl" aria-hidden="true"><use href="#leaf"/></svg>
   <div class="wrap">
-    <div class="section-head">
-      <div class="kicker">Before you go</div>
-      <h2 class="section-title">Quick answers</h2>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do I need followers or a big account? <span class="plus">+</span></div>
-      <div class="faq-a">No. This works from a brand new account with zero followers. Pinterest is a search engine first — followers aren't required to get clicks.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do I need to spend money on ads or tools? <span class="plus">+</span></div>
-      <div class="faq-a">No. The entire system is built to start at $0. No paid traffic, no premium software required.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How much time does this take daily? <span class="plus">+</span></div>
-      <div class="faq-a">About 2 focused hours a day, following the steps in order. Consistency matters more than raw hours.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How do I get the guide after I pay? <span class="plus">+</span></div>
-      <div class="faq-a">It's an instant digital download through Gumroad. You get access right after checkout.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What if it's not the right fit? <span class="plus">+</span></div>
-      <div class="faq-a">Reach out and I'll sort out a refund. I'd rather you trust this page than feel stuck with something that isn't for you.</div>
+    <h2>Is This Right for You?</h2>
+    <div class="two">
+      <div class="card yes"><h3>For you if:</h3>
+        <ul><li>You're starting from zero</li><li>Views come but clicks don't</li><li>You're ready to execute</li></ul></div>
+      <div class="card sage no"><h3>Not for you if:</h3>
+        <ul><li>You want overnight money</li><li>You'll read it and never build</li></ul></div>
     </div>
   </div>
 </section>
 
-<section class="final">
+<!-- ================= GUARANTEE ================= -->
+<section class="reveal">
   <div class="wrap">
-    <h2>Your first $1,000 starts with one decision</h2>
-    <p class="sub">This isn't about luck or a big following — it's about fixing the exact reason your pins get views but no clicks. That's the whole guide, laid out step by step.</p>
-    <a class="btn-primary" href="https://womensguide.gumroad.com/l/pinterestguide" target="_blank" rel="noopener">Get The Real System <span class="price-old">$49</span> $24</a>
-    <div class="guarantee">Secure checkout via Gumroad &nbsp;·&nbsp; Instant download</div>
+    <div class="guar">
+      <div class="shield">🛡️</div>
+      <h3>30-Day Action Guarantee</h3>
+      <p style="margin-top:8px">Follow the system. If you don't see real progress, get a full refund. No questions asked. The risk is on me, not you.</p>
+    </div>
   </div>
 </section>
+
+<!-- ================= FAQ ================= -->
+<section class="reveal">
+  <div class="wrap">
+    <h2>Quick Answers</h2>
+    <details><summary>Do I need Pinterest experience?</summary><p>No. Account creation is step one.</p></details>
+    <details><summary>How much time daily?</summary><p>1 to 2 hours.</p></details>
+    <details><summary>Will this work in 2027?</summary><p>Yes. It's built on future-proof niches.</p></details>
+    <details><summary>Any extra costs?</summary><p>No. Free tools only.</p></details>
+    <details><summary>Refund policy?</summary><p>30 days, no questions.</p></details>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="final reveal">
+  <svg class="leaf br" aria-hidden="true"><use href="#leaf"/></svg>
+  <div class="wrap">
+    <h2>Your First <span class="brush">$1,000</span> Is 30 to 40 Days Away. Then Comes $10K.</h2>
+    <p class="l">2026 is for building the system. 2027 is for scaling it. Every day you wait is a day of lost sales.</p>
+
+    <!-- BUTTON 3 (final) -->
+    <a class="btn pulse" href="https://womensguide.gumroad.com/l/pinterestguide" data-buy>Start My First $1,000 Plan for $24</a>
+    <span class="urgency">Launch price $24, rising to $47 soon</span>
+  </div>
+</section>
+
+</main>
 
 <footer>
   <div class="wrap">
-    <div class="brand-foot">Pin Income Blueprint</div>
-    <p>Built for beginners starting a Pinterest side income from scratch. No affiliation with Pinterest Inc.</p>
-    <p class="foot-promise">This guide teaches the exact system I use — it doesn't promise a specific income. Results depend on your own effort, consistency, and niche.</p>
+    <p>Results vary. Earnings mentioned are examples, not a promise or guarantee. Your income depends on your effort, niche, and consistency.</p>
+    <p>© <span id="yr">2026</span> All rights reserved</p>
   </div>
 </footer>
 
-<div class="sticky-cta">
-  <div class="info">
-    <div class="l1">Today: $24</div>
-    <div class="l2"><span style="text-decoration:line-through;">$49</span> · instant access</div>
-  </div>
-  <a class="btn-primary" href="https://womensguide.gumroad.com/l/pinterestguide" target="_blank" rel="noopener">Get The System</a>
+<!-- ================= STICKY MOBILE BAR ================= -->
+<div class="sticky" id="sticky">
+  <div class="price">$24<small>One-time payment</small></div>
+  <a class="btn pulse" href="https://womensguide.gumroad.com/l/pinterestguide" data-buy>Get Instant Access</a>
 </div>
 
+<script>
+/* Fade-up reveal */
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(en){
+    en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});
+  },{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+
+/* Count-up numbers (edit data-count in the HTML) */
+(function(){
+  var nums=document.querySelectorAll('[data-count]');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function run(el){
+    var end=parseFloat(el.dataset.count),pre=el.dataset.prefix||'',suf=el.dataset.suffix||'',t0=null,dur=1500;
+    function fmt(v){return pre+Math.round(v).toLocaleString('en-US')+suf;}
+    if(reduce){el.textContent=fmt(end);return;}
+    function step(t){
+      if(!t0)t0=t;
+      var p=Math.min((t-t0)/dur,1);
+      el.textContent=fmt(end*(1-Math.pow(1-p,3)));
+      if(p<1)requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if(!('IntersectionObserver' in window)){return;}
+  var io=new IntersectionObserver(function(en){
+    en.forEach(function(x){if(x.isIntersecting){run(x.target);io.unobserve(x.target);}});
+  },{threshold:.6});
+  nums.forEach(function(n){io.observe(n)});
+})();
+
+/* Sticky bar shows after the hero */
+(function(){
+  var bar=document.getElementById('sticky');
+  function check(){bar.classList.toggle('show',window.scrollY>440);}
+  window.addEventListener('scroll',check,{passive:true});check();
+})();
+
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
 </body>
 </html>
